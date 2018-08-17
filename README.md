@@ -17,7 +17,9 @@ $ deb http://apt.anybox.fr/openerp common main
 ```
 - Si se quiere añadir la firma. Esta a veces tarda mucho tiempo o incluso da time out. Es opcional meterlo
 ```
-$ sudo apt-key adv --keyserver hkp://subkeys.pgp.net --recv-keys 0xE38CEB07
+
+$ wget http://apt.anybox.fr/openerp/pool/main/a/anybox-keyring/
+$  dpkg -i anybox-keyring_0.2_all.deb
 ```
 - Actualizar e instalar
 ```
